@@ -6,6 +6,7 @@ import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import 'element-plus/dist/index.css'
 import './assets/styles/main.scss'
+import 'virtual:svg-icons-register'
 
 // 消息提示注册到全局
 import { ElMessage } from 'element-plus'

@@ -5,15 +5,15 @@
                 <!-- 左侧信息 -->
                 <div class="footer-left">
                     <div class="site-info">
-                        <h3>张洪Heo的博客</h3>
+                        <h3>暴龙Baolong的博客</h3>
                         <p>记录生活，分享技术</p>
                     </div>
                     <div class="copyright">
                         <p>
-                            © {{ currentYear }} 张洪Heo
+                            © {{ currentYear }} Baolong
                             <span class="separator">|</span>
                             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">
-                                浙ICP备xxxxxxxx号-1
+                              浙ICP备2024136487号-1
                             </a>
                         </p>
                         <p class="powered-by">
