@@ -7,6 +7,9 @@
     --border-color: #eaeaea;
     --hover-color: #425AEF;
     --shadow-color: rgba(0, 0, 0, 0.1);
+    // 滚动条颜色
+    --scrollbar-color: #87CEEB;          /* 默认颜色 */
+    --scrollbar-hover-color: #00BFFF;    /* 悬浮时的颜色 */
 
     // Element Plus 变量覆盖
     --el-bg-color: var(--bg-primary);
@@ -24,6 +27,9 @@
     --border-color: #333333;
     --hover-color: #6C8EFA;
     --shadow-color: rgba(0, 0, 0, 0.3);
+    // 滚动条颜色
+    --scrollbar-color: #4682B4;          /* 深色模式下默认颜色 */
+    --scrollbar-hover-color: #1E90FF;    /* 深色模式下悬浮颜色 */
 
     // Element Plus 变量覆盖
     --el-bg-color: var(--bg-primary);
