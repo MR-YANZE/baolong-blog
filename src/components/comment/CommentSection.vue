@@ -159,7 +159,7 @@ const submitComment = async () => {
 const currentUser = {
     id: 1,
     name: '游客',
-    avatar: 'https://picsum.photos/200'
+    avatar: 'http://47.99.194.194:9000/baolongoss/baolong.jpg'
 }
 
 // 模拟登录状态

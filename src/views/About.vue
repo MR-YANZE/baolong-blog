@@ -72,35 +72,6 @@
       </div>
 
       <!-- 技能标签 -->
-      <!--<div class="section">
-        <h2>🛠️ 技能栈</h2>
-        <div class="content-card">
-          <div class="skills">
-            &lt;!&ndash; 核心技能 &ndash;&gt;
-            <el-tag class="skill-tag" effect="plain" type="success">Java</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="success">Spring Boot</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="success">Spring Cloud</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="success">MyBatis</el-tag>
-
-            &lt;!&ndash; 数据库 &ndash;&gt;
-            <el-tag class="skill-tag" effect="plain" type="warning">MySQL</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="warning">Redis</el-tag>
-
-            &lt;!&ndash; 中间件 &ndash;&gt;
-            <el-tag class="skill-tag" effect="plain" type="info">RabbitMQ</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="info">Nginx</el-tag>
-
-            &lt;!&ndash; 工具 &ndash;&gt;
-            <el-tag class="skill-tag" effect="plain">Git</el-tag>
-            <el-tag class="skill-tag" effect="plain">Maven</el-tag>
-            <el-tag class="skill-tag" effect="plain">Docker</el-tag>
-
-            &lt;!&ndash; 前端 &ndash;&gt;
-            <el-tag class="skill-tag" effect="plain" type="info">Vue.js</el-tag>
-            <el-tag class="skill-tag" effect="plain" type="info">HTML/CSS</el-tag>
-          </div>
-        </div>
-      </div>-->
       <div class="section">
         <h2>🛠️ 技能栈</h2>
         <div class="content-card">
@@ -178,7 +149,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import SvgIcon from '@/components/comment/SvgIcon.vue'
+import SvgIcon from '@/components/common/SvgIcon.vue'
 
 // 默认头像
 const defaultAvatar = 'http://47.99.194.194:9000/baolongoss/baolong.jpg'
@@ -277,6 +248,14 @@ const stats = ref({
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: rotate(360deg);
+        border-color: var(--el-color-primary);
       }
     }
 
