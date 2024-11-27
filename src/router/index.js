@@ -10,8 +10,9 @@ const routes = [
                 name: 'Home',
                 component: () => import('@/views/Home.vue'),
                 meta: {
-                    title: '首页'
-                }
+                    title: '首页',
+                    keepAlive: true
+                },
             },
             {
                 path: 'article/:id',
@@ -45,7 +46,11 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    // 滚到顶部
+    // scrollBehavior(to, from, savedPosition) {
+    //     return { top: 0 }
+    // }
 })
 
 // 在路由配置文件中添加

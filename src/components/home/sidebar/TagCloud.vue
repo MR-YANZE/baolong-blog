@@ -2,7 +2,7 @@
     <el-card class="tag-cloud">
         <template #header>
             <div class="card-header">
-                <span>标签云</span>
+                <span>文章标签</span>
             </div>
         </template>
 

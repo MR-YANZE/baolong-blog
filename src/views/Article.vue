@@ -123,7 +123,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, getCurrentInstance } from 'vue'
+import { ref, computed, onMounted, onUnmounted, getCurrentInstance, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { ElCollapseTransition, ElMessage } from 'element-plus'
 import { Calendar, View, Search, ArrowDown, ArrowUp, ArrowLeft, ArrowRight, Plus, Minus, ChatLineRound, Document } from '@element-plus/icons-vue'
@@ -415,7 +415,17 @@ const handleRightTopScroll = () => {
     }
 }
 
-onMounted(() => {
+onMounted(async () => {
+    // 确保页面加载时滚动到顶部
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    })
+
+    // 等待 DOM 更新
+    await nextTick()
+
+
     addHeadingIds()
 
     // 监听滚动事件：右侧栏下滑

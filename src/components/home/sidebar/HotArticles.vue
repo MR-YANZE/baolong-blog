@@ -41,7 +41,7 @@ const hotArticles = ref([
     },
     {
         id: 2,
-        title: 'TypeScript 入门指南',
+        title: 'TypeScript 入门指南入门指南入门指南入门指南入门指南入门指南',
         views: 2100
     },
     {

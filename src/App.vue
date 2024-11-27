@@ -2,7 +2,9 @@
   <el-config-provider :locale="zhCn">
     <div class="app-container">
       <nav-header />
-      <router-view />
+      <keep-alive include="Home">
+        <router-view />
+      </keep-alive>
       <el-backtop :right="20" :bottom="20" />
     </div>
   </el-config-provider>

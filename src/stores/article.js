@@ -21,7 +21,7 @@ export const useArticleStore = defineStore('article', {
     actions: {
         async getArticles({ page = 1, pageSize = 10 } = {}) {
             // 模拟API请求延迟
-            await new Promise(resolve => setTimeout(resolve, 500))
+            // await new Promise(resolve => setTimeout(resolve, 500))
 
             const start = (page - 1) * pageSize
             const end = start + pageSize
