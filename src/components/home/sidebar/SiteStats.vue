@@ -34,8 +34,8 @@ const statistics = [
     },
     {
         icon: 'ChatLineSquare',
-        label: '评论数',
-        value: '678'
+        label: '文章总数',
+        value: '678 篇'
     }
 ]
 </script>
