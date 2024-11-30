@@ -223,8 +223,8 @@ const stats = ref({
 <style lang="scss" scoped>
 .about-page {
   max-width: 800px;
-  margin: 80px auto 40px;
-  padding: 0 20px;
+  margin: 20px auto;
+  //padding: 0 20px;
 }
 
 .profile-card {
@@ -234,6 +234,7 @@ const stats = ref({
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 40px;
+  border: 1px solid var(--el-border-color);
 
   .profile-header {
     .avatar {
@@ -318,6 +319,7 @@ const stats = ref({
       padding: 24px;
       border-radius: 12px;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--el-border-color);
 
       p {
         margin-bottom: 16px;

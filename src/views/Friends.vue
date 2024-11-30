@@ -198,8 +198,7 @@ const handleSubmit = async () => {
 <style lang="scss" scoped>
 .friends-page {
   max-width: 1200px;
-  margin: 80px auto 0;
-  padding: 20px;
+  margin: 0 auto;
 
   .page-header {
     text-align: center;

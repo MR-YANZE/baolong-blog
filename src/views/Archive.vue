@@ -89,7 +89,6 @@ onMounted(async () => {
 <style lang="scss" scoped>
 .archive {
   padding: 20px 0;
-  margin-top: 60px;
 
   .category-stats {
     margin-bottom: 20px;

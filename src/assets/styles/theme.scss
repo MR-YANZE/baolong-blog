@@ -16,6 +16,8 @@
     --el-text-color-primary: var(--text-primary);
     --el-text-color-regular: var(--text-secondary);
     --el-border-color: var(--border-color);
+    --card-border-color: var(--border-color);
+    --card-shadow: var(--shadow-color);
 }
 
 .dark {
@@ -36,10 +38,23 @@
     --el-text-color-primary: var(--text-primary);
     --el-text-color-regular: var(--text-secondary);
     --el-border-color: var(--border-color);
+    --card-border-color: rgba(255, 255, 255, 0.1);
+    --card-shadow: rgba(0, 0, 0, 0.3);
 
     // 深色模式下的特殊样式
     .el-card {
         background-color: var(--bg-secondary);
+        border-color: var(--card-border-color);
+
+        .el-card__header {
+            border-bottom-color: var(--card-border-color);
+        }
+
+        &.is-always-shadow,
+        &.is-hover-shadow:focus,
+        &.is-hover-shadow:hover {
+            box-shadow: 0 2px 12px 0 var(--card-shadow);
+        }
     }
 
     .el-menu {
@@ -52,6 +67,10 @@
             }
         }
     }
+}
+
+.el-card {
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 // 过渡动画
