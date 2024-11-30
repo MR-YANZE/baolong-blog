@@ -55,8 +55,8 @@
       </router-link>
 
         <!-- 加载更多 -->
-        <div class="load-more" v-if="hasMore">
-            <el-button :loading="loading" @click="loadMore">
+        <div class="load-more-container" v-if="hasMore">
+            <el-button :loading="loading" @click="loadMore" class="load-more-btn">
                 加载更多
             </el-button>
         </div>
@@ -208,6 +208,18 @@ onMounted(() => {
           gap: 4px;
         }
       }
+    }
+  }
+
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    .load-more-btn {
+      width: 120px;  // 设置按钮宽度
+      // 如果你想要更圆的按钮，可以添加这行
+      border-radius: 20px;
     }
   }
 }
