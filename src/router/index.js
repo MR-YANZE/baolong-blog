@@ -15,6 +15,12 @@ const routes = [
                 },
             },
             {
+                path: '/archive',
+                name: 'Archive',
+                component: () => import('@/views/Archive.vue'),
+                meta: { title: '归档' }
+            },
+            {
                 path: 'article/:id',
                 name: 'Article',
                 component: () => import('@/views/Article.vue')

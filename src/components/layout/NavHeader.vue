@@ -45,7 +45,7 @@ const { isDark, toggleTheme } = useTheme()
 const menuItems = [
     { name: '首页', path: '/', icon: 'House' },
     { name: '文章', path: '/articles', icon: 'Document' },
-    // { name: '归档', path: '/archive', icon: 'Folder' },
+    { name: '存档', path: '/archive', icon: 'Folder' },
     { name: '友链', path: '/friends', icon: 'Link' },
     { name: '关于', path: '/about', icon: 'User' }
 ]
